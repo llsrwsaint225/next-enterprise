@@ -1,5 +1,7 @@
 import { Metadata } from "next"
+import Image from "next/image";
 import { Button } from "components/Button/Button"
+import Navbar from "components/Navbar";
 
 import { LP_GRID_ITEMS } from "lp-items"
 
@@ -23,43 +25,215 @@ export const metadata: Metadata = {
 export default function Web() {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
-          <div className="mx-auto place-self-center">
-            <h1 className="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
-              Next.js Enterprise Boilerplate
-            </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              Jumpstart your enterprise project with our feature-packed, high-performance Next.js boilerplate!
-              Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
-              enjoyable development process.
-            </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
-              Get started
-            </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
-              Deploy Now
-            </Button>
+      <section className="w-full bg-rose-100 dark:bg-gray-900">
+        <div className="w-dyn-list bg-green-800">
+          <div role="list" className="">
+            <div role="listitem" className="w-dyn-item">
+              <div className="flex justify-center pt-2 pb-2 text-center">
+                <div className="alert-text text-rose-100">
+                  SupportNinja is hiring! Apply through our Jobs Board.{" "}
+                  <a href="https://www.supportninja.com/careers" className="underline">
+                    Find Open Positions Today
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <Navbar/> */}
+        <div className="mx-auto flex w-full flex-wrap items-center justify-between p-4 pt-5 pr-28 pb-20 pl-28 md:justify-between">
+          <a href="https://www.supportninja.com/">
+            <Image
+              src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cd45cce4719_Support%20Ninja%20|%20Full%20Logo.svg"
+              width={156.29}
+              height={26.78}
+              alt="Support Ninja | Full Logo"
+              className="nav-wordmark"
+              loading="lazy"
+            />
+          </a>
+          <a>Solutions</a>
+          <a>Industries</a>
+          <a>How It Works</a>
+          <a>About</a>
+          <a>Resources</a>
+          {/* <svg
+            className="h-5 w-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg> */}
+          <button className="rounded-full bg-green-950 px-5 py-3 text-white">Get Started</button>
+        </div>
+      </section>
+      <section className="bg-rose-100 pb-24 dark:bg-gray-900">
+        <div className="mx-5">
+          <div className="flex w-full flex-wrap items-center justify-center px-48 pb-7 text-center text-3xl font-medium">
+            <span>
+              {" "}
+              Quickly and seamlessly scale your team with agile, highly customizable outsourcing solutions that power
+              your growth.
+            </span>
+          </div>
+          <div className="flex w-full flex-wrap items-center justify-center text-center font-sans text-6xl font-extrabold">
+            <span>Outsourcing worth talking about</span>
           </div>
         </div>
       </section>
-      <section className="bg-white dark:bg-gray-900">
-        <div className="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
-          <div className="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div key={singleItem.title} className="flex flex-col items-center justify-center text-center">
-                <div className="bg-primary-100 dark:bg-primary-900 mb-4 flex size-10 items-center justify-center rounded-full p-1.5 text-blue-700 lg:size-12">
-                  {singleItem.icon}
-                </div>
-                <h3 className="mb-2 text-xl font-bold dark:text-white">{singleItem.title}</h3>
-                <p className="text-gray-500 dark:text-gray-400">{singleItem.description}</p>
-              </div>
-            ))}
+
+      <section className="bg-rose-100">
+        <hr className="mx-24 border-t-1 border-gray-400 pb-12" />
+        <div className="flex w-full flex-wrap items-center justify-center text-center font-sans text-xl font-extrabold">
+          <span>Which outsourcing solutions are you looking for?</span>
+        </div>
+        <div className="text-md flex w-full flex-wrap items-center justify-center pb-4 text-center font-sans font-medium">
+          <span>Choose as many as you need.</span>
+        </div>
+        <div className="mx-24 flex justify-center">
+          <div className="relative mx-6 flex h-48 w-36 flex-col items-center rounded-2xl bg-[#FBECE2] p-6 shadow-md">
+            <input type="checkbox" className="absolute top-4 right-4 h-5 w-5" />
+            <div className="flex flex-grow items-center justify-center">
+              <svg
+                className="h-8 w-8"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </div>
+            <p className="text-center text-lg font-bold">test</p>
+          </div>
+          <div className="relative mx-6 flex h-48 w-36 flex-col items-center rounded-2xl bg-[#FBECE2] p-6 shadow-md">
+            <input type="checkbox" className="absolute top-4 right-4 h-5 w-5" />
+            <div className="flex flex-grow items-center justify-center">
+              <svg
+                className="h-8 w-8"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </div>
+            <p className="text-center text-lg font-bold">test</p>
+          </div>
+          <div className="relative mx-6 flex h-48 w-36 flex-col items-center rounded-2xl bg-[#FBECE2] p-6 shadow-md">
+            <input type="checkbox" className="absolute top-4 right-4 h-5 w-5" />
+            <div className="flex flex-grow items-center justify-center">
+              <svg
+                className="h-8 w-8"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </div>
+            <p className="text-center text-lg font-bold">test</p>
+          </div>
+          <div className="relative mx-6 flex h-48 w-36 flex-col items-center rounded-2xl bg-[#FBECE2] p-6 shadow-md">
+            <input type="checkbox" className="absolute top-4 right-4 h-5 w-5" />
+            <div className="flex flex-grow items-center justify-center">
+              <svg
+                className="h-8 w-8"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </div>
+            <p className="text-center text-lg font-bold">test</p>
+          </div>
+          <div className="relative mx-6 flex h-48 w-36 flex-col items-center rounded-2xl bg-[#FBECE2] p-6 shadow-md">
+            <input type="checkbox" className="absolute top-4 right-4 h-5 w-5" />
+            <div className="flex flex-grow items-center justify-center">
+              <svg
+                className="h-8 w-8"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </div>
+            <p className="text-center text-lg font-bold">test</p>
           </div>
         </div>
+        <div className="flex justify-center pt-10">
+          <button className="flex items-center justify-between rounded-full bg-red-500 px-6 py-3 font-serif text-lg text-white shadow-md transition duration-300 hover:bg-red-600">
+            Get Started
+            <span className="ml-4 flex items-center justify-center rounded-full bg-white p-2 text-red-500">➝</span>
+          </button>
+        </div>
+        
+        <div className="flex justify-center mt-50 mx-24">
+          <div className="flex h-48 w-full flex-col items-center rounded-2xl bg-gray-400 shadow-md">
+            <span>Driving better business results for 200+ companies.</span>
+            <svg
+                className="h-8 w-8"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+          </div>
+        </div>
+        
+
       </section>
     </>
   )
