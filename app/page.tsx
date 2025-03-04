@@ -211,29 +211,23 @@ export default function Web() {
             <span className="ml-4 flex items-center justify-center rounded-full bg-white p-2 text-red-500">➝</span>
           </button>
         </div>
-        
-        <div className="flex justify-center mt-50 mx-24">
-          <div className="flex h-48 w-full flex-col items-center rounded-2xl bg-gray-400 shadow-md">
-            <span>Driving better business results for 200+ companies.</span>
-            <svg
-                className="h-8 w-8"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-          </div>
-        </div>
-        
 
+        <div className="relative bg-[#FAE7DB] py-16">
+      <div className="mx-auto max-w-6xl bg-gray-400 rounded-lg p-8 flex items-center">
+        <div className="text-black font-semibold text-xl md:text-2xl px-6 py-4 rounded-md">
+          Driving better business results for 200+ companies.
+        </div>
+
+        <div className="mt-6 grid grid-cols-3 md:grid-cols-6 gap-8 items-center">
+          <img src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c0380ce484b_B%26MG_foundation.svg" alt="Bill & Melinda Gates Foundation" className="h-8" />
+          <img src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64f9e7ede9b6df55f6f1a029_Midjourney%20Logo%20(1).svg" alt="Midjourney" className="h-8" />
+          <img src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/65a7f1f93afe1bee1bb429a4_Happy%20Socks%20Logo.svg" alt="Happy Socks" className="h-8" />
+          <img src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0c0a86ce483a_Customer%20Logo__Vidyard.svg" alt="Vidyard" className="h-8" />
+          <img src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cd632ce484a_redweek.svg" alt="Red Week" className="h-8" />
+          <img src="https://cdn.prod.website-files.com/64149f79022d0c5fc8ce46e8/64149f79022d0cd161ce4839_Customer%20Logo__Product%20Madness.svg" alt="Product Madness" className="h-8" />
+        </div>
+      </div>
+    </div>
       </section>
     </>
   )
