@@ -18,7 +18,9 @@ Download and install Node.js from the official website: https://nodejs.org/
 
 Once Node.js is installed, install pnpm globally using the following command:
 
-npm install -g pnpm
+```bash
+  npm install -g pnpm
+```
 
 3. Fork the Project
 
@@ -26,27 +28,27 @@ Go to the official GitHub repository and fork the project: https://github.com/Bl
 
 4. Clone and Open the Project
 
+```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/next-enterprise.git
 cd next-enterprise
+```
 
 Then, open the project in VS Code:
-
+```bash
 code .
+```
 
 5. Install Dependencies
-
 Run the following command inside the project directory:
-
+```bash
 pnpm install
-
+```
 6. Run the Project
-
-6.1 Open the terminal in VS Code
-
-6.2 Start the development server
-
+  - 6.1 Open the terminal in VS Code
+  - 6.2 Start the development server
+```bash
 npm run dev
-
+```
 6.3 Open the application in your browser
 
 Visit: http://localhost:3000
